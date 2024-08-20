@@ -19,3 +19,5 @@ class DataIngestionConfig:
     feature_store_file_path: str = os.path.join(data_ingestion_dir, DATA_INGESTION_FEATURE_STORE_DIR)
 
     data_download_url: str = DATA_DOWNLOAD_URL
+    
+    data_file_name:str = DATA_FILE_NAME
