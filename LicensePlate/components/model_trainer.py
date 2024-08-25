@@ -29,7 +29,7 @@ class ModelTrainer:
             model_config_file_name = self.model_trainer_config.weight_name.split(".")[0]
             print(model_config_file_name)
 
-            command = f'yolo task=detect mode=train model={model_config_file_name} data=data.yaml epochs={self.model_trainer_config.no_epochs} imgsz=640 batch={self.model_trainer_config.batch_size}'
+            command = f'yolo task=detect mode=train model={model_config_file_name} data=data.yaml epochs={self.model_trainer_config.no_epochs} imgsz=640 batch={self.model_trainer_config.batch_size} device=0'
             # Training the model
             os.system(command)
 
